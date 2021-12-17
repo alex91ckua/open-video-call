@@ -7,7 +7,9 @@ export const RESOLUTION_ARR = {
 
 export const SHARE_ID = 1;
 
-export const APP_ID = "ebb8a66abac7468a9b961efd279e41ac";
+export const APP_ID = AGORA_APP_ID ? AGORA_APP_ID : "ebb8a66abac7468a9b961efd279e41ac";
+
+console.log(`Key used: ${APP_ID}`);
 
 // Assign Token to null if you have not enabled app certificate
 export const Token = null;
